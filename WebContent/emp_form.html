@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=number], select, numberarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=varchar], select, varchararea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=number], select, numberarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=date], select, datearea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=radio], select, radioarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.header{
+background-color:green;
+height:30px;
+}
+
+.username{
+text-align:right;
+padding:5px;
+color:white;
+margin-right:50px;
+}
+</style>
+</head>
+<body style="margin: 0px;">
+<div class="header">
+	<div class="username">Mercy<a href="#">Logout</a></div>
+
+</div>
+<h2>Employee Form</h2>
+
+
+<div class="container">
+  <form action="Forms" method="post">
+  
+  <div class="row">
+      <div class="col-25">
+        <label for="emp">Employee ID</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="emp" name="emp" placeholder="Your Employee ID..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="email">Email ID</label>
+      </div>
+      <div class="col-75">
+        <input type="varchar" id="email" name="email" placeholder="Your Email ID..">
+      </div>
+    </div>
+
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="mobile">Mobile</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="mobile" name="mobile" placeholder="Your mobile no..">
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="date">DOB</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="DOB" name="date" >
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="date">Gender</label>
+      </div>
+       <div class="col-75">
+        <label class="">Male
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="">Female
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>    
+    </div>
+	
+    <div class="row">
+      <div class="col-25">
+        <label for="qualification">Qualification</label>
+      </div>
+      <div class="col-75">
+        <select id="qualification" name="qualification">
+          <option value="MCA">MCA</option>
+          <option value="BCA">BCA</option>
+          <option value="B.A">B.A</option>
+        </select>
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="date">Date Of Joining</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="Date Of Joining" name="date" >
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="exp">Year Of Experience</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="exp" name="Year Of Experience">
+      </div>
+    </div>
+	
+	
+        <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
