@@ -41,7 +41,7 @@ public class LoginProcess extends HttpServlet {
 		try{  
 			Class.forName("com.mysql.jdbc.Driver");  
 			Connection con=DriverManager.getConnection(  
-			"jdbc:mysql://localhost:3306/test","root","");  
+			"jdbc:mysql://localhost:3306/test","root","root");  
 			Statement stmt=con.createStatement();  
 			ResultSet rs=stmt.executeQuery(query);  
 			if(rs.next()) {

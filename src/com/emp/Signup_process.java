@@ -61,7 +61,7 @@ public class Signup_process extends HttpServlet {
 		System.out.println(query);
 		String s="jdbc:mysql://localhost:3306/test";
 		String user="root";
-		String pws="";
+		String pws="root";
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");

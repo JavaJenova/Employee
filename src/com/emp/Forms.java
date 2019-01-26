@@ -67,7 +67,7 @@ public class Forms extends HttpServlet {
 		System.out.println(query);
 		String s="jdbc:mysql://localhost:3306/test";
 		String user="root";
-		String pwd="";
+		String pwd="root";
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
